@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container {
+            width: 100vw;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .card {
+            width: 35rem;
+            height: 20rem;
+            border-radius: 1.5rem;
+            box-shadow: 1px 2px 4px 1px rgb(131, 131, 131);
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+        }
+
+        .header {
+            font-weight: 800;
+            font-size: 2rem;
+            color: rgb(80, 80, 80);
+        }
+
+        .sub-header {
+            font-weight: 300;
+            font-size: 1.5rem;
+            color: slategrey;
+        }
+
+        .info {
+            display: flex;
+            height: 100%;
+
+        }
+
+        .img {
+            margin: 5px;
+            height: 100%;
+            width: 50%;
+            background-image: url("https://scontent.fbkk22-1.fna.fbcdn.net/v/t1.0-9/129515603_3358292460950407_5543799135924428791_o.jpg?_nc_cat=100&ccb=2&_nc_sid=730e14&_nc_eui2=AeH196gAETuiT-xq--x28VA3QTaFgUSwI4xBNoWBRLAjjI9WWPiwEDIbD7cqAnZsD0PnCIx8fmp9qaAL14MXLNd4&_nc_ohc=RGrdA6mbXIwAX-86S4t&_nc_ht=scontent.fbkk22-1.fna&oh=b17f75db453763b892934c7d9ce3182a&oe=5FFF3225");
+            background-position: center;
+            background-size: cover;
+        }
+
+        .text-info {
+            margin: 10px;
+            font-weight: 600;
+            color: rgb(80, 80, 80);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .sub-text {
+            font-weight: 300;
+            font-size: 0.75rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="header">Tutorism</div>
+            <div class="sub-header">Thanawat Benjachatriroj</div>
+            <div class="info">
+                <div class="img"></div>
+                <div class="text-info">
+                    <div>Nickname : <span class="sub-text">Tutor</span></div>
+                    <div>Birthdate : <span class="sub-text">15 October 2000</span></div>
+                    <div>Gender : <span class="sub-text">Male</span></div>
+                    <div>Tel : <span class="sub-text">087-6191414</span></div>
+                    <div>Email : <span class="sub-text">thanawat.bcr@gmail.com</span></div>
+                    <div>School : <span class="sub-text">Bangkok Christian College</span></div>
+                    <div>University : <span class="sub-text">CS@SIT, KMUTT</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
