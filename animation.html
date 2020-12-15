@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+
+    <style>
+      .box:nth-child(1) {
+        padding: 50px 100px;
+        background-color: #cc99ff;
+        display: inline-block;
+        margin: 50px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .box:nth-child(2) {
+        padding: 150px;
+        background-color: #ff66ff;
+        opacity: 0.5;
+        display: inline-block;
+        margin: 50px;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .box:first-child:hover {
+        transform: scale(1.05) translateY(-25px);
+        box-shadow: 0px 10px 15px 5px #ccc;
+      }
+      .box:first-child:active {
+        transform: translateY(0);
+        box-shadow: 0px 5px 10px 0px #ccc;
+      }
+      .box:nth-child(2):hover {
+        animation: slideRightAndBack 2s ease-in;
+      }
+
+      @keyframes slideRightAndBack {
+        0% {
+        }
+        50% {
+          transform: translateX(100%);
+          background-color: aqua;
+        }
+        70% {
+          transform: translateX(110%);
+        }
+        80% {
+          transform: translateX(90%);
+        }
+        90% {
+          transform: translateX(120%);
+          background-color: red;
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+      .body-text {
+        font-size: 50px;
+        margin-left: 100px;
+        display: inline-block;
+      }
+      .body-text:hover {
+        transform: skewX(10deg) skewY(5deg) translateY(-5px);
+      }
+
+      /* .box:nth-child(2):hover {
+        transform: scale(1.2);
+      } */
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="body-text">Simple Text</div>
+  </body>
+</html>
