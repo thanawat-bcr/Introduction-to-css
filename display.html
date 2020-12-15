@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        p {
+            color: red;
+        }
+
+        .div {
+            color: green;
+        }
+
+        #header {
+            color: blue;
+        }
+
+
+        #link-box .link {
+            color: peru;
+        }
+
+        .div-box * {
+            color: pink;
+        }
+
+        .div-box-2>.in-div-2 {
+            color: orange;
+        }
+
+        .div-box-2+.in-div-2 {
+            color: greenyellow;
+        }
+
+        .in-div:nth-child(even) {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">This is DIV 1</div>
+    <div class="div">This is DIV 2</div>
+    <h1 id="header">Header</h1>
+    <p>Paragraph</p>
+    <div id="link-box">
+        <a href="#" class="link">Link 1</a>
+        <a href="#" class="link">Link 2</a>
+        <a href="#" class="link">Link 3</a>
+        <a href="#" class="link">Link 4</a>
+    </div>
+    <hr>
+    <div class="div-box">
+        <div class="in-div">div 1</div>
+        <div class="in-div">div 2</div>
+        <div class="in-div">div 3</div>
+        <div class="in-div">div 4</div>
+    </div>
+    <hr>
+    <div class="div-box-2">
+        <div class="in-div-2">div 1</div>
+        <div>
+            <div class="in-div-2">div 2</div>
+        </div>
+        <div class="in-div-2">div 3</div>
+        <div class="in-div-2">div 4</div>
+    </div>
+    <div class="in-div-2">div outside #1 div-box-2</div>
+    <div class="in-div-2">div outside #2 div-box-2</div>
+</body>
+
+</html>

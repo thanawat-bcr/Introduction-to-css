@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position </title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: lightsalmon;
+        }
+
+        .box:nth-child(2) {
+            background: lightblue;
+        }
+
+        .box:nth-child(3) {
+            background: lightseagreen;
+        }
+
+        .absolute {
+            position: absolute;
+            top: 0;
+        }
+
+        .relative {
+            position: relative;
+            top: 200px;
+        }
+
+        .parent-box {
+            width: 500px;
+            height: 500px;
+            background: lightgoldenrodyellow;
+            position: relative;
+        }
+
+        .child-box {
+            width: 100px;
+            height: 100px;
+            background: lightgreen;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .h-screen {
+            height: 300vw;
+            background: lightcyan;
+
+        }
+
+        .box-fixed {
+            width: 100vw;
+            height: 64px;
+            background: lightsalmon;
+            position: fixed;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box"></div>
+    <div class="box absolute"></div>
+    <div class="box"></div>
+    <div class="parent-box">
+        <div class="child-box"></div>
+    </div> -->
+    <div class="box-fixed"></div>
+    <div class="h-screen"></div>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        #px {
+            font-size: 16px;
+        }
+
+        #rem1 {
+            font-size: 1rem;
+        }
+
+        #rem2 {
+            font-size: 2rem;
+        }
+
+        #em1 {
+            font-size: 1em;
+        }
+
+        #em2 {
+            font-size: 2em;
+        }
+
+        #parent {
+            font-size: 20px;
+        }
+
+        #box-screen {
+            width: 100vw;
+            height: 100vh;
+            background: lightsalmon;
+        }
+
+        #box {
+            width: 50%;
+            height: 100px;
+            background: lightpink;
+        }
+
+        #inside-box {
+            width: 50%;
+            height: 75px;
+            background: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box-screen">
+        <div id="px">16 PX</div>
+        <div id="rem1">1 REM</div>
+        <div id="rem2">2 REM</div>
+        <div id="em1">1 EM</div>
+        <div id="em2">2 EM</div>
+        <div id="parent">
+            <div id="rem1">1 REM inside parent</div>
+            <div id="rem2">2 REM inside parent</div>
+            <div id="em1">1 EM inside parent</div>
+            <div id="em2">2 EM inside parent</div>
+        </div>
+        <hr>
+        <div id="box">
+            <div id="inside-box"></div>
+        </div>
+    </div>
+</body>
+
+</html>
