@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background: lightcoral;
+        }
+
+        .box:nth-child(2) {
+            background: lightslategrey;
+        }
+
+        .box:nth-child(3) {
+            background: lightseagreen;
+        }
+
+        .relative {
+            position: relative;
+            top: 200px;
+        }
+
+        .absolute {
+            position: absolute;
+            left: 100px;
+            top: 0;
+        }
+
+        .parent-box {
+            width: 500px;
+            height: 500px;
+            background: blue;
+            position: relative;
+            left: 50px;
+        }
+
+        .child-box {
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+            left: -100px;
+            top: -100px;
+            transform: translate(-50%, -50%);
+        }
+
+        .h-2screen {
+            height: 400vh;
+        }
+
+        .fixed {
+            height: 4rem;
+            width: 100vw;
+            background: lightseagreen;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="box"></div>
+    <div class="box absolute"></div>
+    <div class="box"></div>
+    <div class="parent-box">
+        <div class="child-box"></div>
+    </div> -->
+    <div class="fixed"></div>
+    <div class="h-2screen">
+    </div>
+</body>
+
+</html>
